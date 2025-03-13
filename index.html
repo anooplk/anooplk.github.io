@@ -1,7 +1,731 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+  <link rel="stylesheet" href="css/style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,300&display=swap" rel="stylesheet">
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css" rel="stylesheet" />
+  <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
+  <title>Samrudhi Automation</title>
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <nav class="navbar navbar-expand-sm navbar-white bg-light">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <img  class="logo" src="./img/Logo-removebg-preview.png" alt="samrudhi">
+        <span class=" logText " >Samrudhi </span> 
+        <span class=" logText1 " >Automation </span>
+        <sub style="font-size: 12px; text-transform: capitalize; " >
+          Powered by <img  src="./img/logo-e1524046095870.png" alt="">    </sub>
+      </a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a href="index.html" class="nav-link"  >Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="services.html" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link ">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SHOWCASE SLIDER -->
+  <section id="showcase">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner mb-10">
+        <div class="carousel-item carousel-image-1 active ">
+          <div class="container mb-10">
+            <div class="carousel-caption d-none d-sm-block text-left mb-10 ">
+
+  
+            <!-- <h1 class="display-5 ">Your Home At Your Fingertips</h1>-->
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item carousel-image-2">
+          <div class="container mb-10">
+            <div class="carousel-caption d-none d-sm-block mb-5 text-left">
+              <span class="heading1">Your home at your fingertips</span>
+              <p class="lead text-dark "></p>
+             <!-- <a href="#" class="btn btn-primary btn-lg">Learn More</a>-->
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item carousel-image-3">
+          <div class="container mb-10">
+            <div class="carousel-caption d-none d-sm-block text-left mb-5">
+              <h1 class="display-4">Lighting Solutions</h1>
+              <p class="lead" style="font-weight: 500;" > Today we can change and control dimming levels of lights by changing intensity,
+                 can change colours to white, yellow etc. or can change colour temperatures to warm, 
+                cool, neutral as per the requirement and features available</p>
+              <!--<a href="#" class="btn btn-success btn-lg">Learn More</a>-->
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item carousel-image-4">
+          <div class="container mb-10">
+            <div class="carousel-caption d-none d-sm-block text-left mb-5">
+              <h1 class="display-4">Smart Device Management</h1>
+              <p class="lead" style="font-weight: 500;"> Let your smart home perform functions on its own through automatic activation/deactivation 
+                or through commands received from your smart device.</p>
+              <!--<a href="#" class="btn btn-success btn-lg">Learn More</a>-->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#myCarousel" data-slide="prev" class="carousel-control-prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+
+      <a href="#myCarousel" data-slide="next" class="carousel-control-next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </section>
+
+  <!--HOME ICON SECTION  -->
+  <section id="home-icons" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 mb-4 text-center ">
+          <div  class="iconbackground" >
+            <img  class="img-icon1" src="./img/home-icon.jpg" alt="">
+            <h3 class="home-icon-text" >Homes</h3>
+          </div>
+            <p   style="font-family: 'Poppins', sans-serif;"  class="mt-4 text-left  home-icon-subscript" >Our products provide robust, time tested home automation experience that give you control of your home.</p>
+          
+        </div>
+        <div class="col-md-3 mb-4 text-center">
+          <div  class="iconbackground" >
+            <img  class="img-icon1" src="./img/theft.jpg" alt="">
+            <h3 class="home-icon-text" >Secure</h3>
+          </div>
+          <p style="font-family: 'Poppins', sans-serif;" class="mt-4 text-left  home-icon-subscript">Our mobile home security system lets you keep an eye on all aspects of your home remotely so you can always be in peace.</p>
+        </div>
+        <div class="col-md-3 mb-4 text-center">
+          <div  class="iconbackground" >
+            <img  class="img-icon1" src="./img/conference.jpg" alt="">
+            <h3 class="home-icon-text" >enterprises</h3>            
+          </div>
+          <p style="font-family: 'Poppins', sans-serif;" class="mt-4 text-left  home-icon-subscript">Our automation solutions are designed to meet the operational and energy management needs of large and small scale enterprises.</p>
+
+        </div>
+        <div class="col-md-3 mb-4 text-center">
+          <div  class="iconbackground" >
+            <img  class="img-icon1" src="./img/enterprises.jpg" alt="">
+            <h3 class="home-icon-text" >Builders</h3>
+          </div>
+          <p style="font-family: 'Poppins', sans-serif;" class="mt-4 text-left  home-icon-subscript">We have created expertise and deep experience in providing Home Automation solutions for large projects.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOME HEADING SECTION -->
+  <section id="home-heading" class="p-5">
+    <div class="dark-overlay">
+      <div class="row">
+        <div class="col">
+          <div class="container pt-5">
+            <div class="row">
+              <div class="col-md-4">
+                <h1 class="timer"  data-to = "30"  data-speed="1500" ></h1>
+                <h3>Builders</h3>
+              </div>
+              <div class="col-md-4">
+                <h1 class="timer"  data-to = "45"  data-speed="1500" ></h1>
+                <h3>Projects</h3>
+              </div>
+              <div class="col-md-4">
+                <h1 class="timer"  data-to = "7000"  data-speed="1500" ></h1>
+                <h3>Smart Homes</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFO SECTION -->
+  <section id="info" class="py-3 bg-light" >
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 align-self-center mt-5 mb-5">
+          <h3 style=" font-weight: 600;"  class="py-2" >Live In The Future</h3>
+          <p  class="text-justify" style="font-family: 'Poppins', sans-serif;"   >We are automation specialists with a view towards giving people an instant access to control their devices in their home and at their enterprises.
+            Since 2008, our solutions for home automation has been welcomed by several major players in the field of housing – Sobha, Brigade, Prestige, Puravankara, Total Environment, Tata Housing, and Lodha, to name a few. While deepening our products in home automation we currently also focus on products that simplify the enterprise spaces like ATMS, Offices,
+             Hotel Rooms etc.</p>
+        <!--  <a href="about.html" class="btn btn-outline-danger btn-lg">Learn More</a>-->
+        </div>
+        <div class="col-md-6 mt-5 mb-5">
+          <img src="img/Home.jpeg" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO PLAY -->
+  <section id="video-play" >
+    <div class="dark-overlay">
+      <div class="row">
+        <div class="col">
+          <div class="container p-5">
+            <a href="#" class="video" data-video="https://www.youtube.com/embed/oo7PE5n071Q" data-toggle="modal" data-target="#videoModal">
+              <i class="fas fa-play fa-3x"></i>
+            </a>
+            <h1>See What We Do</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="features" class="py-5"> 
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col">
+          <h1 class="text-center " style="text-transform :uppercase; font-weight: 700; font-size:22px ; color: rgb(47, 57, 133); "  >Our Features</h1>
+          <h3 class="text-center text-primary" style="text-transform:capitalize;font-weight: 700; font-size: 36px;  " >Why Choose Us</h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-lg-4">
+          <div class="icon-box-2 mb-5">
+           <div   class="media">
+            <div  style="width: 15%;" class="feature-icon">
+              <img  style="width: 75%; height: 75%; " src="./img/Gear.png" alt="">
+            </div>
+            <div  style="width: 85%;"  >
+              <h4>Lighting solutions </h4>
+              <p></p> 
+              <p> control dimming levels of lights by changing intensity, can change colours to white, 
+                yellow etc. or can change colour temperatures to warm, cool, 
+                \neutral as per the requirement and features available</p>
+            </div>
+            
+           </div>
+          </div>
+
+          <div class="icon-box-2 mb-5">
+            <div   class="media">
+             <div  style="width: 15%;" class="feature-icon">
+               <img  style="width: 75%; height: 75%; " src="./img/Gear.png" alt="">
+             </div>
+             <div  style="width: 85%;" >
+               <h4>Music Zoning Solutions </h4>
+               <p ></p> 
+               <p>  Play your music from central music bank in any room of your home with just one touch on your smart device </p>
+             </div>
+             
+            </div>
+           </div>
+
+           <div class="icon-box-2 mb-5">
+            <div   class="media">
+             <div  style="width: 15%;" class="feature-icon">
+               <img  style="width: 75%; height: 75%; " src="./img/Gear.png" alt="">
+             </div>
+             <div style="width: 85%;" >
+               <h4>Smart Security </h4>
+               <p></p> 
+               <p  > Using SECURE couldn’t be simpler. Set up the device with
+                  security sensors in your home
+                  and get alerts on the SECURE App as soon as any sensor is trigerred. </p>
+             </div>
+             
+            </div>
+           </div>
+
+
+        </div>
+        <div class="col-12 col-lg-4 pt-5 ">
+          <div class="pt-5">
+            <img style="  width: 100%; height: 120%;"  src="./img/smart-house-icon.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+
+
+          <div class="icon-box-2 mb-5">
+            <div   class="media">
+             <div style="width: 15%;"   class="feature-icon">
+               <img  style="width: 75%; height: 75%; " src="./img/Gear.png" alt="">
+             </div>
+             <div  style="width: 85%;"    >
+               <h4>Elderly Care </h4>
+               <p></p> 
+               <p> 
+                sensors can also be used for medical monitoring such as detection of unusual sleep patterns.
+                 Alarms are generated to a pre-defined number and signal is also sent to managing medical emergency
+                  if required.These products make your home and elderly
+                 parent not just independent, but ensures them safety and support to at all times.
+               </p>
+             </div>
+             
+            </div>
+           </div>
+ 
+           <div class="icon-box-2 mb-5">
+             <div   class="media">
+              <div style="width: 15%;"  class="feature-icon">
+                <img  style="width: 75%; height: 75%; " src="./img/Gear.png" alt="">
+              </div>
+              <div style="width: 85%;"  >
+                <h4>Banks and ATMS </h4>
+                <p></p> 
+                <p> We care the Security and monitoring of ATM premises,Safety and Security of customers and employees and 
+                  Optimization of Power consumption </p>
+              </div>
+              
+             </div>
+            </div>
+ 
+            <div class="icon-box-2 mb-5">
+             <div   class="media">
+              <div  style="width: 15%;" class="feature-icon">
+                <img  style="width: 75%; height: 75%; " src="./img/Gear.png" alt="">
+              </div>
+              <div style="width: 85%;"  >
+                <h4>Conference Room Automation</h4>
+                <p></p> 
+                <p> controls disparate actions such as dimming the lights, controlling the projector screen, switching on the projector, 
+                  turning down the blinds to reduce external lighting and setting up the right AC temperature. </p>
+              </div>
+              
+             </div>
+            </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <section id="features" class="py-5"> 
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col">
+         <!-- <h1 class="text-center " style="text-transform :uppercase; font-weight: 700; font-size:22px ; color: rgb(47, 57, 133); "  >Our Features</h1> -->
+          <h3 class="text-center text-primary" style="text-transform:capitalize;font-weight: 700; font-size: 36px;  " >Few List Of Our Clients</h3>
+        </div>
+      </div>
+ </div>
+  </section>
+
+ <section>
+   <div class="container"> 
+    <div class="owl-one owl-carousel owl-theme">
+                              <div class="item customer-logo"> <img src="./img/tata.png" alt="image" /> </div>
+                              <div class="item customer-logo"> <img src="./img/total.png" alt="image" /> </div>
+                              <div class="item customer-logo"> <img src="./img/purvankara.png" alt="image" /> </div>
+                              <div class="item customer-logo"> <img src="./img/caspian.png" alt="image" /> </div>
+                              <div class="item customer-logo"> <img src="./img/faurecia.png" alt="image" /> </div>
+                              <div class="item customer-logo"> <img src="./img/itc.png" alt="image" /> </div>
+                              <div class="item customer-logo"> <img src="./img/mindteck.png" alt="image" /> </div>
+                              <div class="item customer-logo"> <img src="./img/godrej.png" alt="image" /> </div>
+                              <div class="item customer-logo"> <img src="./img/ncc.png" alt="image" /> </div>
+                              <div class="item customer-logo" > <img src="./img/oberoi.png" alt="image" /> </div>
+  
+   </div>
+  
+</div>
+ </section>
+
+
+ <section id="features" class="py-3"> 
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col">
+        <h1 class="text-center " style="text-transform :uppercase; font-weight: 700; font-size:22px ; color: rgb(47, 57, 133); "  >what our</h1>
+        <h3 class="text-center text-primary" style="text-transform:capitalize;font-weight: 700; font-size: 36px;  " >Customers Saying About Silvan Products</h3>
+      </div>
+    </div>
+  </div>
+  </section>
+
+
+
+  
+ <section class="mb-5"  >
+  <div class="container"> 
+   <div class="owl-two owl-carousel owl-theme">
+                             <div class="item">
+                              <div class="card bg-light ">
+                                <img  src="./img/P-Ramakrishnan.png" alt="" style=" padding-left: 25%; width:75%; height: 75%; "  class="card-img-top  mb-2" />
+                                <div class="card-body">
+
+
+
+
+
+                                    <p class="card-text">
+
+                                      <blockquote class="blockquote text-left">
+                                        <p style =  " font-family: 'Poppins'; font-size: 16px;   " > Silvan system is truly customized for Indian lifestyle and has built-in fault tolerance, which is very important in large projects.
+                                          We are very happy with their product, and also the discipline and professionalism with which they are executing these projects.</p>
+                                           </p>
+                                        <footer class="blockquote-footer">  <span class="font-weight-bold" >P RAMAKRISHNAN</span> 
+                                          <cite title="Source Title">Ex Deputy Managing Director - Shobha Limited</cite>
+                                        </footer>
+                                      </blockquote>
+                                    </p>
+
+                              </div>
+                            </div>                             
+                          </div>
+                          <div class="item">
+                            <div class="card bg-light ">
+                              <img  src="./img/Dyushyant-Arya-.png" alt="" style=" padding-left: 25%; width:75%; height: 75%; "  class="card-img-top  mb-2" />
+                              <div class="card-body">
+                                <p class="card-text">
+
+                                  <blockquote class="blockquote text-left">
+                                    <p style =  " font-family: 'Poppins'; font-size: 16px;   " >
+                                      Silvan's Office Automation Solutions for energy management and office lighting controls enabled us to reach our goal. 
+                                      Their system is cost-effective, easy to install, easy to use and easy to maintain. 
+                                      We are very happy with the solution employed by Silvan.
+                                    </p>
+                                       
+                                    <footer class="blockquote-footer">  <span class="font-weight-bold" >Dushyant Arya</span> 
+                                      <cite title="Source Title">Managing Director - Indo Arya</cite>
+                                    </footer>
+                                  </blockquote>
+                                </p>
+                              </div>
+                          </div>                             
+                        </div>
+                        <div class="item">
+                          <div class="card bg-light ">
+                            <img  src="./img/Kamal.png" alt="" style=" padding-left: 25%; width:75%; height: 75%; "  class="card-img-top  mb-2" />
+                            <div class="card-body">
+                              <p class="card-text">
+
+                                <blockquote class="blockquote text-left">
+                                  <p style =  " font-family: 'Poppins'; font-size: 16px;   " >
+                                    Silvan has demonstrated very good understanding of the specific requirements of Home Automation in the Indian environment and has built a strong Home Automation platform of its own which we have adopted in all our projects. 
+                                   </p>
+                                     
+                                  <footer class="blockquote-footer">  <span class="font-weight-bold" >Kamal Sagar</span> 
+                                    <cite title="Source Title">Founder & Head - Total Environment Building Systems</cite>
+                                  </footer>
+                                </blockquote>
+                              </p>
+                            </div>
+                        </div>                             
+                      </div>
+ 
+  </div>
+ 
+</div>
+</section>
+
+
+
+  <!-- NEWSLETTER -->
+ <!-- <section id="newsletter" class="text-center p-5 bg-dark text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>Sign Up For Our Newsletter</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio asperiores consectetur, quae ducimus voluptates
+            vero repellendus architecto maiores recusandae mollitia?</p>
+          <form class="form-inline justify-content-center">
+            <input type="text" class="form-control mb-2 mr-2" placeholder="Enter Name">
+            <input type="text" class="form-control mb-2 mr-2" placeholder="Enter Email">
+            <button class="btn btn-primary mb-2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- FOOTER -->
+  <footer id="main-footer" class="text-center p-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h4>Offices</h4>
+        </div>
+        <div class="col-md-4">
+          <h4>Email</h4>
+        </div>
+        <div class="col-md-4">
+          <h4>Enquiry</h4>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-md-4">
+          <p  style="font-family: 'Poppins', sans-serif; font-weight: lighter; " >No 6 Opposite Garizim School <br>
+            24th Cross road <br>
+            Ejipura Main road <br>
+            Bengaluru 560047 <br>
+            <br>
+            1st floor Mora Building <br>
+            MLA road <br>
+            Chevayur, kovoor <br> 
+            Calicut 17</p> 
+        </div>
+        <div class="col-md-4">
+          <p style="font-family: 'Poppins', sans-serif; font-weight: lighter; ">
+            Sales : info@samrudhiautomation.com <br>
+          </p>
+        </div>
+        <div class="col-md-4">
+          <p style="font-family: 'Poppins', sans-serif; font-weight: lighter; ">
+            Sales   : +91 9744737000<br>
+            Support : +91  <br>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- VIDEO MODAL -->
+  <div class="modal fade" id="videoModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+          <iframe src="" frameborder="0" height="350" width="100%" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"></script>
+
+  <script>
+
+
+
+$('.owl-one').owlCarousel({
+   // stagePadding: 50,
+    loop:true,
+    margin:8,
+    nav:false,
+    autoplay : true,
+    autoplayTimeout : 2000,  
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+
+$('.owl-two').owlCarousel({
+   // stagePadding: 50,
+    loop:true,
+    margin:8,
+    nav:false,
+    autoplay : true,
+    autoplayTimeout : 2000,  
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+
+
+    // Get the current year for the copyright
+
+    $('#year').text(new Date().getFullYear());
+
+    // Configure Slider
+    $('.carousel').carousel({
+      interval: 6000,
+      pause: 'hover'
+    });
+
+    // Lightbox Init
+    $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+      event.preventDefault();
+      $(this).ekkoLightbox();
+    });
+
+    // Video Play
+    $(function () {
+      // Auto play modal video
+      $(".video").click(function () {
+        var theModal = $(this).data("target"),
+          videoSRC = $(this).attr("data-video"),
+          videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
+        $(theModal + ' iframe').attr('src', videoSRCauto);
+        $(theModal + ' button.close').click(function () {
+          $(theModal + ' iframe').attr('src', videoSRC);
+        });
+      });
+    });
+
+
+
+    (function ($) {
+	$.fn.countTo = function (options) {
+		options = options || {};
+		
+		return $(this).each(function () {
+			// set options for current element
+			var settings = $.extend({}, $.fn.countTo.defaults, {
+				from:            $(this).data('from'),
+				to:              $(this).data('to'),
+				speed:           $(this).data('speed'),
+				refreshInterval: $(this).data('refresh-interval'),
+				decimals:        $(this).data('decimals')
+			}, options);
+			
+			// how many times to update the value, and how much to increment the value on each update
+			var loops = Math.ceil(settings.speed / settings.refreshInterval),
+				increment = (settings.to - settings.from) / loops;
+			
+			// references & variables that will change with each update
+			var self = this,
+				$self = $(this),
+				loopCount = 0,
+				value = settings.from,
+				data = $self.data('countTo') || {};
+			
+			$self.data('countTo', data);
+			
+			// if an existing interval can be found, clear it first
+			if (data.interval) {
+				clearInterval(data.interval);
+			}
+			data.interval = setInterval(updateTimer, settings.refreshInterval);
+			
+			// initialize the element with the starting value
+			render(value);
+			
+			function updateTimer() {
+				value += increment;
+				loopCount++;
+				
+				render(value);
+				
+				if (typeof(settings.onUpdate) == 'function') {
+					settings.onUpdate.call(self, value);
+				}
+				
+				if (loopCount >= loops) {
+					// remove the interval
+					$self.removeData('countTo');
+					clearInterval(data.interval);
+					value = settings.to;
+					
+					if (typeof(settings.onComplete) == 'function') {
+						settings.onComplete.call(self, value);
+					}
+				}
+			}
+			
+			function render(value) {
+				var formattedValue = settings.formatter.call(self, value, settings);
+				$self.html(formattedValue);
+			}
+		});
+	};
+	
+	$.fn.countTo.defaults = {
+		from: 0,               // the number the element should start at
+		to: 0,                 // the number the element should end at
+		speed: 1000,           // how long it should take to count between the target numbers
+		refreshInterval: 100,  // how often the element should be updated
+		decimals: 0,           // the number of decimal places to show
+		formatter: formatter,  // handler for formatting the value before rendering
+		onUpdate: null,        // callback method for every time the element is updated
+		onComplete: null       // callback method for when the element finishes updating
+	};
+	
+	function formatter(value, settings) {
+		return value.toFixed(settings.decimals);
+	}
+}(jQuery));
+
+jQuery(function ($) {
+  // custom formatting example
+  $('.count-number').data('countToOptions', {
+	formatter: function (value, options) {
+	  return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+	}
+  });
+  
+  // start all the timers
+  $('.timer').each(count);  
+  
+  function count(options) {
+	var $this = $(this);
+	options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+	$this.countTo(options);
+  }
+});
+
+
+
+  </script>
 </body>
+
 </html>
